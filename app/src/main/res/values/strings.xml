@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">CRUDArticles</string>
+    <string name="title_activity_test" translatable="false">test</string>
+
+    <string name="codeTitle">CODE</string>
+    <string name="descriptionTitle">DESCRIPTION</string>
+    <string name="familyTitle">FAMILY</string>
+    <string name="new_article">New Article</string>
+    <string name="priceTitle">PRICE</string>
+    <string name="priceIvaTitle">PRICE (+IVA)</string>
+    <string name="stockTitle">STOCK</string>
+    <string name="moneySymbol">$</string>
+    <string name="decimalSeparator">.</string>
+
+    <string name="insertArticleError">An error occurred while inserting the article. Try again.</string>
+    <string name="insertArticleCorrect">The article has been inserted successfully.</string>
+    <string name="loadingArticleError">An error occurred while loading the article.</string>
+    <string name="updateArticleError">An error occurred while updating the article. Try again.</string>
+    <string name="deleteArticleError">An error occurred while deleting the article. Try again.</string>
+    <string name="updateArticleCorrect">The article has been updated successfully.</string>
+    <string name="deleteArticleCorrect">The article has been deleted successfully.</string>
+
+    <string name="delete_title">Deleting article</string>
+    <string name="delete_message">Are you sure you want to delete it?</string>
+
+    <string name="family_software">Software</string>
+    <string name="family_hardware">Hardware</string>
+    <string name="family_default">Other</string>
+    <string name="family_empty">-</string>
+    <string name="emptyFieldError">Field required</string>
+    <string name="greater0Error">Value must be greater than 0</string>
+    <string name="greaterEqual0Error">Value must be greater than 0 or equal</string>
+    <string name="codeExistsError">This code already exists</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit_article">Edit Article</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+
+    <string name="filter_stock">Stock &lt;= 0</string>
+    <string name="filter">Filter</string>
+    <string name="Order">Order</string>
+    <string name="order_code">Code</string>
+    <string name="order_price">Price</string>
+    <string name="order_recents">Recent</string>
+    <string name="order_stock">Stock</string>
+    <string name="ordertype">Ascendant/Descendant</string>
+
+    <string name="search_by">Search by</string>
+    <string name="search">Search</string>
+</resources>

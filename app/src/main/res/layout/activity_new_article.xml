@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewArticle">
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/cancel"
+        app:icon="@drawable/ic_outline_cancel_24"
+        app:iconGravity="textEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/givLoading"
+        android:layout_width="147dp"
+        android:layout_height="44dp"
+        android:src="@drawable/loading"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/add"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconGravity="textEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/givLoading"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tvPriceInputTitle2"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionTitle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tvStockInputTitle" />
+
+            <TextView
+                android:id="@+id/tvPriceInputTitle"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priceTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/spFamily" />
+
+            <TextView
+                android:id="@+id/tvPriceIvaInputTitle"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/priceIvaTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/etPrice" />
+
+            <TextView
+                android:id="@+id/tvStockInputTitle"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/stockTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceIvaForm" />
+
+            <TextView
+                android:id="@+id/tvFamilyInputTitle"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/familyTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/etCode" />
+
+            <TextView
+                android:id="@+id/tvTtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_article"
+                android:textColor="@color/text_color"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="87dp" />
+
+            <TextView
+                android:id="@+id/tvCodeInputTitle"
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/codeTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="53dp" />
+
+            <EditText
+                android:id="@+id/etCode"
+                style="@style/inputForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/codeTitle"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCodeInputTitle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toEndOf="@+id/tvCodeInputTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvCodeInputTitle" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="16dp" />
+
+            <Spinner
+                android:id="@+id/spFamily"
+                style="@style/inputForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFamilyInputTitle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tvFamilyInputTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvFamilyInputTitle" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                style="@style/inputForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/priceTitle"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPriceInputTitle"
+                app:layout_constraintEnd_toStartOf="@+id/tvMoneySymbol"
+                app:layout_constraintStart_toEndOf="@+id/tvPriceInputTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvPriceInputTitle" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                style="@style/inputForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/descriptionTitle"
+                android:inputType="textMultiLine"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceInputTitle2" />
+
+            <EditText
+                android:id="@+id/etStock"
+                style="@style/inputForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ems="10"
+                android:hint="@string/stockTitle"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@+id/tvStockInputTitle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toEndOf="@+id/tvStockInputTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvStockInputTitle" />
+
+            <TextView
+                android:id="@+id/tvCodeError"
+                style="@style/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/etCode" />
+
+            <TextView
+                android:id="@+id/tvPriceError"
+                style="@style/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/etPrice" />
+
+            <TextView
+                android:id="@+id/tvStockError"
+                style="@style/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/etStock" />
+
+            <TextView
+                android:id="@+id/tvDescError"
+                style="@style/errorMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceInputTitle2" />
+
+            <ImageView
+                android:id="@+id/iconCodeError"
+                style="@style/iconError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/etCode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/etCode"
+                app:layout_constraintTop_toTopOf="@+id/etCode" />
+
+            <ImageView
+                android:id="@+id/iconPriceError"
+                style="@style/iconError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/etPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.588"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/etPrice" />
+
+            <ImageView
+                android:id="@+id/iconDescError"
+                style="@style/iconError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPriceInputTitle2"
+                app:layout_constraintStart_toEndOf="@+id/tvPriceInputTitle2"
+                app:layout_constraintTop_toTopOf="@+id/tvPriceInputTitle2" />
+
+            <ImageView
+                android:id="@+id/iconStockError"
+                style="@style/iconError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/etStock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.588"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/etStock" />
+
+            <TextView
+                android:id="@+id/tvMoneySymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moneySymbol"
+                android:textColor="@color/text_color"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="@+id/etPrice"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/etPrice" />
+
+            <TextView
+                android:id="@+id/tvPriceIvaForm"
+                style="@style/inputForm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPriceIvaInputTitle"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toEndOf="@+id/tvPriceIvaInputTitle"
+                app:layout_constraintTop_toTopOf="@+id/tvPriceIvaInputTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

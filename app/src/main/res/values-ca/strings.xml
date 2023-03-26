@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="codeTitle">CODI</string>
+    <string name="descriptionTitle">DESCRIPCIÓ</string>
+    <string name="familyTitle">FAMILIA</string>
+    <string name="new_article">Nou Article</string>
+    <string name="priceTitle">PREU</string>
+    <string name="priceIvaTitle">PREU (+IVA)</string>
+    <string name="stockTitle">ESTOC</string>
+    <string name="moneySymbol">€</string>
+    <string name="decimalSeparator">,</string>
+
+    <string name="insertArticleError">Hi ha hagut un error al afegir l\'article. Intenti-ho de nou.</string>
+    <string name="insertArticleCorrect">L\'article s\'ha afegit correctament</string>
+    <string name="loadingArticleError">Hi ha hagut un error al carregar l\'article.</string>
+    <string name="updateArticleError">Hi ha hagut un error al actualitzar l\'article. Intenti-ho de nou.</string>
+    <string name="deleteArticleError">Hi ha hagut un error al eliminar l\'article. Intenti-ho de nou.</string>
+    <string name="updateArticleCorrect">L\'article ha sigut actualitzat correctament.</string>
+    <string name="deleteArticleCorrect">L\'article ha sigut eliminat correctament.</string>
+
+    <string name="delete_title">Eliminant article</string>
+    <string name="delete_message">Está segur de que desitjar eliminar l\'article?</string>
+
+    <string name="family_software">Software</string>
+    <string name="family_hardware">Hardware</string>
+    <string name="family_default">Altres</string>
+    <string name="family_empty">-</string>
+    <string name="emptyFieldError">Camp requirid</string>
+    <string name="greater0Error">El valor ha de ser major a 0</string>
+    <string name="greaterEqual0Error">El valor ha de ser major o igual a 0</string>
+    <string name="codeExistsError">Aquest codi ja existeix</string>
+    <string name="add">Afegir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="edit_article">Editar Article</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Eliminar</string>
+
+    <string name="filter_stock">Estoc &lt;= 0</string>
+
+    <string name="filter">Filtrar</string>
+    <string name="Order">Ordenar</string>
+    <string name="order_code">Codi</string>
+    <string name="order_price">Preu</string>
+    <string name="order_recents">Recents</string>
+    <string name="order_stock">Estoc</string>
+    <string name="ordertype">Ascendent/Descendent</string>
+
+    <string name="search_by">Buscar per</string>
+    <string name="search">Buscar</string>
+
+
+</resources>

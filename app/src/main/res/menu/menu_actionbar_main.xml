@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miSearch"
+        android:icon="@android:drawable/ic_menu_search"
+        android:iconTint="@color/white"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/miSearchBy"
+        android:icon="@drawable/ic_baseline_manage_search_24"
+        android:title="@string/descriptionTitle"
+        android:titleCondensed="@string/search_by"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/miOrderType"
+        android:icon="@drawable/ic_baseline_order_asc_24"
+        app:showAsAction="always"
+        android:title="@string/ordertype" />
+
+    <item android:id="@+id/miFilterStock"
+        android:titleCondensed="@string/filter_stock"
+        android:title="@string/filter_stock"
+        android:checkable="true">
+    </item>
+
+    <item
+        android:id="@+id/miOrder"
+        android:title="@string/Order">
+        <menu>
+            <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/miOrderCode"
+                android:title="@string/order_code"
+                />
+            <item
+                android:id="@+id/miOrderRecents"
+                android:title="@string/order_recents"
+                />
+                <item
+                    android:id="@+id/miOrderPrice"
+                    android:title="@string/order_price"
+                />
+                <item
+                    android:id="@+id/miOrderStock"
+                    android:title="@string/order_stock"
+                />
+            </group>
+        </menu>
+    </item>
+</menu>

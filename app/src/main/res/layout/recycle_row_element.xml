@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPriceTitle"
+                style="@style/title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priceTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPriceIvaTitle"
+                style="@style/title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priceIvaTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceTitle" />
+
+            <TextView
+                android:id="@+id/tvStockIvaTitle"
+                style="@style/title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stockTitle"
+                app:layout_constraintStart_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceIvaTitle" />
+
+            <TextView
+                android:id="@+id/tvCodeTitle"
+                style="@style/title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/codeTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescTitle"
+                style="@style/title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCode" />
+
+            <TextView
+                android:id="@+id/tvCode"
+                style="@style/dataInfo"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toEndOf="@+id/tvCodeTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                style="@style/dataInfo"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toEndOf="@+id/tvDescTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvCode" />
+
+            <TextView
+                android:id="@+id/tvFamilyTitle"
+                style="@style/title.small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/familyTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+            <TextView
+                android:id="@+id/tvFamily"
+                style="@style/dataInfo"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toEndOf="@+id/tvFamilyTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent=".5" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/dataInfo"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/tvPriceTitle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvPriceIva"
+                style="@style/dataInfo"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toEndOf="@+id/tvPriceIvaTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+
+            <TextView
+                android:id="@+id/tvStock"
+                style="@style/dataInfo"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvStockIvaTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvPriceIva" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_mode_edit_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
